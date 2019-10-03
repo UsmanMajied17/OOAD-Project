@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="589.0" prefWidth="756.0" style="-fx-background-color: #c44dff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ooadproject.BranchManager_ViewInventoryController">
+   <children>
+      <Label  alignment="CENTER" layoutX="261.0" layoutY="54.0" prefHeight="17.0" prefWidth="126.0" text="Branch Manager">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="bmname" layoutX="268.0" layoutY="72.0" prefHeight="17.0" prefWidth="137.0" text="Branch Manager">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="bmcnic" layoutX="268.0" layoutY="93.0" text="Hall Road Branch">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="bmloc" layoutX="269.0" layoutY="113.0" text="Hall Road Lahore">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <JFXButton layoutX="561.0" layoutY="64.0" onMousePressed="#LogoutButtonAction" prefHeight="25.0" prefWidth="168.0" style="-fx-background-color: #ff3333;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Line endX="628.0" fill="WHITE" layoutX="115.0" layoutY="194.0" startX="-100.0" stroke="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="558.0" layoutY="107.0" onMousePressed="#HomeButtonAction" prefHeight="25.0" prefWidth="175.0" ripplerFill="#a501f8" style="-fx-background-color: #ccccb3;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane />
+    <AnchorPane layoutX="54.0" layoutY="249.0" minHeight="0.0" minWidth="0.0" prefHeight="234.0" prefWidth="684.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="28.0" layoutY="6.0" prefHeight="17.0" prefWidth="46.0" text="Name" />
+            <Label layoutX="195.0" layoutY="6.0" text="Quantity" />
+            <Label layoutX="375.0" layoutY="6.0" text="Price" />
+            <Label layoutX="575.0" layoutY="6.0" text="Type" />
+         <ScrollPane fx:id="scroll" layoutY="40.0" prefHeight="197.0" prefWidth="684.0">
+            <content>
+               <VBox fx:id="vbox" prefHeight="182.0" prefWidth="679.0">
+                 </VBox>
+            </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="139.0" fitWidth="197.0" layoutX="61.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/img%20(5).jpg" />
+         </image>
+      </ImageView>
+      
+   </children>
+</AnchorPane>

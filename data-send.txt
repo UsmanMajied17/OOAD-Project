@@ -1,0 +1,55 @@
+
+    @FXML   
+    private void RegisterFunction(MouseEvent event) throws IOException{
+        
+        //getting name and password from any Field ....
+        String nameString = name.getText().toString();
+        String passwordString = password.getText().toString();
+        
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("FXMLDocumentController.fxml"));
+        try{
+            loader.load();
+        }catch(Exception e){
+            //nope thing, restart program
+        }
+        
+        FXMLDocumentController mainControl = loader.getController();
+        mainControl.setText(nameString,passwordString);
+        
+        Parent register_parent = loader.getRoot();
+        
+        Scene registerScene = new Scene(register_parent);
+        Stage registerStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        // Moving on Screen
+        
+         register_parent.setOnMousePressed(new EventHandler<MouseEvent>(){
+            @Override
+            public void handle(MouseEvent event){
+                xOffset = event.getSceneX();
+                yOffset = event.getSceneY();
+            }
+        });
+        
+        register_parent.setOnMouseDragged(new EventHandler<MouseEvent>(){
+        
+            @Override
+            public void handle(MouseEvent event){
+                registerStage.setX(event.getScreenX() - xOffset);
+                registerStage.setY(event.getScreenY() - yOffset);
+            }
+            
+        });
+        
+        registerStage.setScene(registerScene);
+        registerStage.show();
+    
+    }
+
+
+
+//In other FXMLController.java Function
+   public void setText(String name, String Password){
+	//This is the VBox in next page, could be textField or anything you wanted to set data to
+        this.vbox.getChildren().add(new Label(name+" "+Password));
+    }

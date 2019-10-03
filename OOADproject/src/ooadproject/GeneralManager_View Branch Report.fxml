@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.DatePicker?>
+
+<AnchorPane id="AnchorPane" prefHeight="589.0" prefWidth="756.0" style="-fx-background-color: #c44dff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ooadproject.GeneralManager_ViewBranchReportController">
+   <children>
+      <JFXButton onMousePressed="#logout" layoutX="561.0" layoutY="64.0" prefHeight="25.0" prefWidth="168.0" style="-fx-background-color: #ff3333;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Line endX="628.0" fill="WHITE" layoutX="115.0" layoutY="194.0" startX="-100.0" stroke="WHITE" />
+      <JFXButton onMousePressed="#goBack" buttonType="RAISED" layoutX="558.0" layoutY="107.0" prefHeight="25.0" prefWidth="175.0" ripplerFill="#a501f8" style="-fx-background-color: #ccccb3;" text="Go Back" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </JFXButton>
+    <AnchorPane layoutX="54.0" layoutY="260.0" minHeight="0.0" minWidth="0.0" prefHeight="139.0" prefWidth="680.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label fx:id="totalSales" layoutX="10.0" layoutY="15.0" prefHeight="17.0" prefWidth="600.0" text="Lable1-Name :">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="medicinesSold" layoutX="10.0" layoutY="35" prefHeight="17.0" prefWidth="600.0" text="Lable2-Name :">
+               <font>
+                  <Font size="12.0" />
+               </font></Label>
+            <Label fx:id="totalIncome" layoutX="10.0" layoutY="65.0" prefHeight="17.0" prefWidth="600.0" text="Label3-Name :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="mostSellingMedicine" layoutX="10.0" layoutY="85.0" prefHeight="17.0" prefWidth="600.0" text="Lable1-Value" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton onMousePressed="#getReport" buttonType="RAISED" layoutX="554.0" layoutY="210.0" prefHeight="25.0" prefWidth="175.0" ripplerFill="#a501f8" style="-fx-background-color: #ccccb3;" text="Get Report" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </JFXButton>
+      
+      <DatePicker promptText="Select Valid date..." fx:id="datepicker" layoutX="150" layoutY="210.0" />
+      
+      <JFXTextField fx:id="branchCode" focusColor="BLACK" layoutX="361.0" layoutY="210.0" opacity="0.76" prefHeight="25.0" prefWidth="175.0" promptText="Enter Branch Code..." style="-fx-background-color: #ffffff;" unFocusColor="WHITE" />
+   </children>
+</AnchorPane>

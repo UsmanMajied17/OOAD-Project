@@ -1,0 +1,31 @@
+Wajahat:
+	-Medicine Reference.
+	-Medicine Sold.
+	-Sale.
+	-MedicineRestockRequestDetail.
+	-Date.
+	-Request.
+	
+	
+Usman Majeed:
+	-Medicine.
+	-BoxTablet.
+	-BottleTablet.
+	-Syrup.
+	
+	
+Ali
+	-Branch.
+	-Company.
+
+Abdullah
+	-Person.
+	-Salesman.
+	-BranchManager.
+	-GeneralManager.
+	
+	
+-Adeel, Younas
+	-GUI.
+	
+	

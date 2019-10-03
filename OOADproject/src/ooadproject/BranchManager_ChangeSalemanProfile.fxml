@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="589.0" prefWidth="756.0" style="-fx-background-color: #c44dff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ooadproject.BranchManager_ChangeSalemanProfileController">
+  <children>
+      <JFXButton onMousePressed="#LogoutButtonAction" layoutX="561.0" layoutY="64.0" prefHeight="25.0" prefWidth="168.0" style="-fx-background-color: #ff3333;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Line endX="628.0" fill="WHITE" layoutX="115.0" layoutY="194.0" startX="-100.0" stroke="WHITE" />
+      <JFXButton onMousePressed="#goBack" buttonType="RAISED" layoutX="558.0" layoutY="107.0" prefHeight="25.0" prefWidth="175.0" ripplerFill="#a501f8" style="-fx-background-color: #ccccb3;" text="Go Back" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="status" layoutX="320.0" layoutY="220" text="Status..." />
+    <AnchorPane layoutX="54.0" layoutY="248.0" minHeight="0.0" minWidth="0.0" prefHeight="33.0" prefWidth="680.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="28.0" layoutY="7.0" prefHeight="17.0" prefWidth="46.0" text="Name" />
+            <Label layoutX="135.0" layoutY="7.0" text="Age" />
+            <Label layoutX="461.0" layoutY="7.0" text="Account Password" />
+            <Label layoutX="234.0" layoutY="8.0" text="Gender" />
+            <Label layoutX="361.0" layoutY="8.0" text="CNIC" />
+            <Label layoutX="600.0" layoutY="7.0" text="Salary" />
+         </children>
+      </AnchorPane>
+      <JFXButton onMousePressed="#ChangeSalesmanButton" buttonType="RAISED" layoutX="558.0" layoutY="349.0" prefHeight="25.0" prefWidth="175.0" ripplerFill="#a501f8" style="-fx-background-color: #ccccb3;" text="Save Changes" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="sname" focusColor="BLACK" layoutX="54.0" layoutY="295.0" opacity="0.9" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #ffffff;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="sage" focusColor="BLACK" layoutX="175.0" layoutY="295.0" opacity="0.9" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #ffffff;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="sg" focusColor="BLACK" layoutX="268.0" layoutY="295.0" opacity="0.9" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #ffffff;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="scnic" focusColor="BLACK" layoutX="366.0" layoutY="294.0" opacity="0.9" prefHeight="25.0" prefWidth="144.0" style="-fx-background-color: #ffffff;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="sap" focusColor="BLACK" layoutX="523.0" layoutY="294.0" opacity="0.9" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #ffffff;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="ssal" focusColor="BLACK" layoutX="631.0" layoutY="294.0" opacity="0.9" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #ffffff;" unFocusColor="WHITE" />
+   </children>
+</AnchorPane>

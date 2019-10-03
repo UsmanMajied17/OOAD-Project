@@ -1,0 +1,27 @@
+Medicine med = new BoxTablet(12, 2,30,"boxtablet1","ANTIBIOTICS",true,365);       
+        Medicine med1 = new BoxTablet(12.5, 3,30,"boxtablet1","ANTIBIOTICS",true,365);
+        Medicine med3 = new BoxTablet(14.0, 10,30,"boxtablet1","ANTIBIOTICS",true,365);
+		Medicine med4 = new BoxTablet(17.5, 20,30,"boxtablet1","ANTIBIOTICS",true,365);
+		Medicine med5 = new BoxTablet(20.5, 12,30,"boxtablet1","ANTIBIOTICS",true,365);
+       
+		
+		
+		
+		Medicine syrup1 = new Syrup(14.9, 100,"syrup1", "Antianalgesic", true, 365 );
+		Medicine syrup2= new Syrup(15.9, 200,"syrup2", "Antianalgesic", true, 365 );
+		Medicine syrup3 = new Syrup(16.9, 300,"syrup3", "Antianalgesic", true, 365 );
+		Medicine syrup4 = new Syrup(17.9, 400,"syrup4", "Antianalgesic", true, 365 );
+		Medicine syrup5 = new Syrup(18.9, 500,"syrup5", "Antianalgesic", true, 365 );
+		
+		
+		 
+		 
+		 Medicine bottletablet1 = new BottleTablet(21.9,20,50,"bottletablet1","Antiseptic",true,365);
+		 Medicine bottletablet2 = new BottleTablet(21.9,30,50,"bottletablet1","Antiseptic",true,365);
+		 Medicine bottletablet3 = new BottleTablet(21.9,25,50,"bottletablet1","Antiseptic",true,365);
+		 Medicine bottletablet4 = new BottleTablet(21.9,40,50,"bottletablet1","Antiseptic",true,365);
+		 Medicine bottletablet5 = new BottleTablet(21.9,100,50,"bottletablet1","Antiseptic",true,365);
+		
+		
+		
+		

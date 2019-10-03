@@ -1,0 +1,51 @@
+@FXML
+     private void AddMedicineButtonAction(MouseEvent event) throws IOException{
+            scroll.setVvalue(1);
+            scroll.setHvalue(1);
+            
+         
+            HBox pane = new HBox();
+            pane.setSpacing(80);
+            pane.prefHeight(36);
+            pane.prefWidth(679);
+            
+            Label name = new Label("4- Medicine D");
+            name.prefHeight(17);
+            name.prefWidth(161);
+            name.setFont(Font.font("System",FontWeight.BOLD, 12));
+            name.setPadding(new Insets(10,0,0,20));
+            
+            Label price = new Label("400");
+            price.setPadding(new Insets(10,0,0,100));
+            
+            //JFXButton 
+            JFXButton btn_delete = new JFXButton("Delete");
+            btn_delete.setButtonType(JFXButton.ButtonType.RAISED);
+            //btn_delete.prefHeight(100);
+            btn_delete.setTextAlignment(TextAlignment.CENTER);
+            btn_delete.setMaxHeight(50);
+            btn_delete.prefWidth(80);
+            btn_delete.setRipplerFill(Paint.valueOf("#a501f8"));
+            btn_delete.setStyle("-fx-background-color: #ccccb3;");
+            btn_delete.setTextFill(Paint.valueOf("#ffffff"));
+            btn_delete.setPadding(new Insets(20,30,0,50));
+            
+            //Button Edit
+            JFXButton btn_edit = new JFXButton("Edit");
+            btn_edit.setButtonType(JFXButton.ButtonType.RAISED);
+            btn_delete.setTextAlignment(TextAlignment.CENTER);
+            btn_edit.prefHeight(50);
+            btn_edit.prefWidth(80);
+            btn_edit.setRipplerFill(Paint.valueOf("#a501f8"));
+            btn_edit.setStyle("-fx-background-color: #ccccb3;");
+            btn_edit.setTextFill(Paint.valueOf("#ffffff"));
+            btn_edit.setPadding(new Insets(20,30,0,50));
+            
+            pane.getChildren().add(name);
+            pane.getChildren().add(price);
+            pane.getChildren().add(btn_delete);
+            pane.getChildren().add(btn_edit);
+            vbox.getChildren().add(pane);
+           
+     
+     }

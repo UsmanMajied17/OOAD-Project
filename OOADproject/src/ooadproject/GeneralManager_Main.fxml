@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="589.0" prefWidth="756.0" style="-fx-background-color: #c44dff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ooadproject.GeneralManager_MainController">
+   <children>
+      <Label fx:id="" layoutX="268.0" layoutY="54.0" prefHeight="17.0" prefWidth="126.0" text="Mr General Manager">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="gm_name" layoutX="268.0" layoutY="72.0" prefHeight="17.0" prefWidth="137.0" text="General Manager name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      
+      <JFXButton onMousePressed="#logout"  layoutX="561.0" layoutY="64.0" prefHeight="25.0" prefWidth="168.0" style="-fx-background-color: #ff3333;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Line endX="628.0" fill="WHITE" layoutX="115.0" layoutY="194.0" startX="-100.0" stroke="WHITE" />
+      <JFXButton onMousePressed="#seeAllRequests" buttonType="RAISED" layoutX="558.0" layoutY="107.0" prefHeight="25.0" prefWidth="175.0" ripplerFill="#a501f8" style="-fx-background-color: #ccccb3;" text="See All Requests" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </JFXButton>
+      
+      <JFXButton onMousePressed="#addBranchManager"  layoutX="200.0" layoutY="530.0" prefHeight="25.0" prefWidth="168.0" style="-fx-background-color: #ff3333;" text="Create branch manager" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      
+      <JFXButton onMousePressed="#viewBranchReport"  layoutX="400.0" layoutY="530.0" prefHeight="25.0" prefWidth="168.0" style="-fx-background-color: #ff3333;" text="View Branch Report" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      
+      <ScrollPane layoutX="54.0" layoutY="280.0" prefHeight="232.0" prefWidth="680.0" fx:id="branchesList">
+         <content>
+            <VBox fx:id = "branchesVbox" prefHeight="219.0" prefWidth="663.0" >
+               <children >
+                  
+               </children>
+            </VBox>
+         </content></ScrollPane>
+    <AnchorPane layoutX="54.0" layoutY="248.0" minHeight="0.0" minWidth="0.0" prefHeight="33.0" prefWidth="680.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="25.0" layoutY="6.0" prefHeight="17.0" prefWidth="46.0" text="S#" />
+            <Label layoutX="165.0" layoutY="7.0" text="Code " />
+            <Label layoutX="293.0" layoutY="7.0" text="      Location" />
+            <Label layoutX="470.0" layoutY="7.0" text="    Manager" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="141.0" fitWidth="200.0" layoutX="61.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/img%20(4).jpg" />
+         </image>
+      </ImageView>
+      <JFXButton onMousePressed="#addBranch" buttonType="RAISED" layoutX="182.0" layoutY="204.0" prefHeight="25.0" prefWidth="175.0" ripplerFill="#a501f8" style="-fx-background-color: #ccccb3;" text="Add Branch" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton onMousePressed="#removeBranch" buttonType="RAISED" layoutX="386.0" layoutY="204.0" prefHeight="25.0" prefWidth="175.0" ripplerFill="#a501f8" style="-fx-background-color: #ccccb3;" text="Remove Branch" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

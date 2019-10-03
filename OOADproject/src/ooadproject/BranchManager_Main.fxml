@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="589.0" prefWidth="756.0" style="-fx-background-color: #c44dff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ooadproject.BranchManager_MainController">
+   
+    <children>
+      <Label alignment="CENTER" layoutX="261.0" layoutY="54.0" prefHeight="17.0" prefWidth="126.0" text="Branch Manager">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="bmname" layoutX="268.0" layoutY="72.0" prefHeight="17.0" prefWidth="137.0" text="Branch Manager">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="bmcnic" layoutX="268.0" layoutY="93.0" text="Hall Road Branch">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="bmloc" layoutX="269.0" layoutY="113.0" text="Hall Road Lahore">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <JFXButton fx:id="btn_logout" layoutX="561.0" layoutY="65.0" onMousePressed="#LogoutButtonAction" prefHeight="25.0" prefWidth="168.0" style="-fx-background-color: #ff3333;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Line endX="628.0" fill="WHITE" layoutX="115.0" layoutY="194.0" startX="-100.0" stroke="WHITE" />
+      <ImageView fitHeight="139.0" fitWidth="197.0" layoutX="61.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/img%20(5).jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="290.0" layoutY="348.0" onMousePressed="#Button_ViewInventory" prefHeight="25.0" prefWidth="175.0" ripplerFill="#a501f8" style="-fx-background-color: #ccccb3;" text="View Inventory" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      
+      <JFXButton buttonType="RAISED" layoutX="116.0" layoutY="397.0" onMousePressed="#Button_EditSalesman" prefHeight="25.0" prefWidth="175.0" ripplerFill="#a501f8" style="-fx-background-color: #ccccb3;" text="Edit Salesmen" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="466.0" layoutY="397.0" onMousePressed="#Button_RequestMedicine" prefHeight="25.0" prefWidth="175.0" ripplerFill="#a501f8" style="-fx-background-color: #ccccb3;" text="Request Medicines" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="bid" alignment="CENTER" graphicTextGap="6.0" layoutX="280.0" layoutY="224.0" prefHeight="25.0" prefWidth="197.0" style="-fx-background-color: #ffffff;" text="Branch ID: 124JCVA1" textFill="#1e0606">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
